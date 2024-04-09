@@ -1,0 +1,62 @@
+//Media Query For Help Only
+@mixin breakPoint($point) {
+    @if $point == mobile {
+        @media(max-width:767px) {
+            @content;
+        }
+    }@else if $point == small {
+        @media(min-width:768px) and (max-width:991px) {
+            @content;
+        }
+    }@else if $point == medium {
+        @media(min-width:992px) and (max-width:1199px) {
+            @content;
+        }
+    }@else if $point == large {
+        @media(min-width:1200px) {
+            @content;
+        }
+    }
+} 
+
+// Centering By Fle
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Overlay For Help Only
+@mixin overlay($color , $opacity) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba($color , $opacity);
+    transition: 0.5s;
+    z-index: -1;
+}
+@mixin prefixer($prop , $value , $prefixes:()) {
+    @each $prefix in $prefixes {
+        #{ '-' + $prefix + '-' + $prop }:$value
+    }
+    #{$prop}:$value;
+}
+
+// Animation Mixin
+// And Auto Add Prefixes To Animation
+
+@mixin animation($animationName) {
+    @-webkit-keyframes #{$animationName}{
+        @content;
+    }
+    @-moz-keyframes #{$animationName}{
+        @content;
+    }
+    @keyframes #{$animationName}{
+        @content;
+    }
+    
+}

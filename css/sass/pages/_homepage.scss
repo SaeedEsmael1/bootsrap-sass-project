@@ -1,0 +1,66 @@
+@use '../helpers/varibels' as *;
+@use '../componats/fonts' as *;
+@use '../helpers/mixins' as *;
+@use '../layout/grid' as *;
+@use './globalpage' as *;
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+// Start Section
+section {
+    .modal {
+        transition: 0.5s;
+    }
+    .text {
+        p {
+            font-size:$fonts-size-18;
+        }
+    }
+    .news-inputs {
+        @include breakPoint(medium) {
+            width: 50%;
+        }
+        @include breakPoint(large) {
+            width: 50%;
+        }
+    }
+}
+// End Section
+
+.accordion-button {
+    border: none !important;
+    outline: none !important;
+    transition: 0.5s;
+    .accordion-body {
+        transition: 0.5s;
+    }
+}
+
+// Start Instroctor
+.instructor {
+    .twiter {
+        color: blueviolet;
+        cursor: pointer;
+    }
+    .facebook {
+        color: blue;
+        cursor: pointer;
+    }
+    .linked-in {
+        color: blue;
+        cursor: pointer;
+    }
+    .instgram {
+        color: red;
+        cursor: pointer;
+    }
+}
+// End Instroctor
+
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px ;
+}

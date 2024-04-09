@@ -1,0 +1,33 @@
+@use '../helpers/varibels' as *;
+@use '../componats/fonts' as *;
+@use '../helpers/mixins' as *;
+@use '../layout/grid' as *;
+@use '../pages/globalpage' as *;
+@use '../componats/button' as *;
+nav {
+    button:focus[type="button"] {
+        box-shadow: none;
+    }
+    .dropmenue {
+        transition: 0.5s;
+        .nav-item {
+            transition: 0.5s;
+            @include breakPoint(mobile) {
+                border:1px solid #ffffff8c;
+                margin-top: 10px;
+                border-radius: 6px;
+                &:hover {
+                    background-color: $mainColor;
+                }
+            }
+            @include breakPoint(small) {
+                border:1px solid #ffffff8c;
+                margin-top: 10px;
+                border-radius: 6px;
+                &:hover {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}

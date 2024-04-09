@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="A-UX-Compitable" content="IE=edge" />
+    <title>Portfolio</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Minifiy CSS File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+    <!-- Map Box -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/homepage.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
+    rel="stylesheet">
+</head>
+<body>  
+    <!-- Start Navebar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+            <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="dropmenue collapse navbar-collapse " id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item text-center">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a href="#instructor" class="nav-link">Instructor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navebar -->
+
+    <!-- Start Section -->
+    <section class="bg-dark text-light p-5 pb-4 text-center">
+        <div class="container">
+            <div class="content d-flex justify-content-between align-items-center">
+                <div class="text text-lg-start pt-5">
+                    <h1 class="m-0 mb-3">Become A <span class="text-warning fw-bold">Web Devoloper</span></h1>
+                    <p class="m-0 mb-3 lh-base">We focus on teaching our students the fundamentals of the latest and greatest
+                        technologies to prepare them for their first dev role.
+                    </p>
+                    <button 
+                        class="mt-4 btn text-bg-primary rounded fs-5 py-2" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#enroll">
+                        Start The Enrollment
+                    </button>
+                    <!-- Start Modal -->
+                    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+                        <div class="modal-dialog text-black">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="enrollLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">Fill out this form and we'll get back to you </p>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="first-name" class="col-form-label">
+                                                First Name:
+                                            </label>
+                                            <input type="text" class="form-control" id="first-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="last-name" class="col-form-label">
+                                                Last Name:
+                                            </label>
+                                            <input type="text" class="form-control" id="last-name">
+                                        </div>
+                                        <div class="">
+                                            <label for="email" class="col-form-label">
+                                                Email:
+                                            </label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </div>
+                <div class="image d-none d-lg-block">
+                    <img class="img-fluid" src="images/showcase.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Start New Section -->
+    <section class="text-bg-primary py-5">
+        <div class="container d-flex  flex-column justify-content-between align-items-center flex-md-row text-center">
+            <div class="text mb-3 m-md-0">
+                <p class="m-0 fs-3 fw-bold ">Sign Up For Our Newsletter:</p>
+            </div>
+            <div class="input-group news-inputs ">
+                <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Enter email" 
+                aria-label="Recipient's username" 
+                aria-describedby="button-addon2">
+
+                <button 
+                class="btn btn-lg bg-dark text-light" 
+                type="button" 
+                id="button-addon2">
+                Button
+                </button>
+              </div>
+            <!-- <div class="subscripe d-flex">
+                <input type="email" placeholder="Enter email" class="input border-0 p-2 px-3 " />
+                <input type="submit" value="Subscripe" class=" submit border-0  px-sm-3 bg-black text-light" />
+            </div> -->
+        </div>
+    </section>
+    <!-- End New Section -->
+
+    <!--Start New Section -->
+    <section class="the-boxes mt-5 pb-5">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center bg-dark text-light p-4 rounded">
+                        <i class="fs-1 m-0 mb-3 fa-solid fa-desktop"></i>
+                        <h3 class="m-0 mb-3">Virtual</h3>
+                        <p class="m-0 mb-3 lh-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque distinctio nostrum perferendis! Itaque accusantium est
+                            mollitia quidem vitae exercitationem numquam architecto sint autem,
+                            in reiciendis, qui at earum quo rem!
+                        </p>
+                        <button class="btn text-bg-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center bg-secondary text-light p-4 rounded">
+                        <i class="fs-1 m-0 mb-3 fa-solid fa-user"></i>
+                        <h3 class="m-0 mb-3">Hybrid</h3>
+                        <p class="m-0 mb-3 lh-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque distinctio nostrum perferendis! Itaque accusantium est
+                            mollitia quidem vitae exercitationem numquam architecto sint autem,
+                            in reiciendis, qui at earum quo rem!
+                        </p>
+                        <button class="btn text-bg-dark">Read More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center bg-dark text-light p-4 rounded">
+                        <i class="fs-1 m-0 mb-3 fa-solid fa-user-group"></i>
+                        <h3 class="m-0 mb-3">In Person</h3>
+                        <p class="m-0 mb-3 lh-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Itaque distinctio nostrum perferendis! Itaque accusantium est
+                            mollitia quidem vitae exercitationem numquam architecto sint autem,
+                            in reiciendis, qui at earum quo rem!
+                        </p>
+                        <button class="btn text-bg-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End New Section -->
+
+    <!-- Start New Section -->
+    <section class="fundamentals pb-5 " id="learn">
+        <div class="container">
+            <div class="content d-flex align-items-center">
+                <div class="image me-5 d-none d-lg-block">
+                    <img class="img-fluid" src="images/fundamentals.svg" alt="">
+                </div>
+                <div class="text ">
+                    <h4 class="m-0 mb-3 fw-bold">Learn The Fundametals</h4>
+                    <p class="m-0 mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum quisquam corporis odio neque blanditiis ut fugiat, sunt debitis reprehenderit
+                        vitae impedit nulla assumenda sapiente nobis doloribus. Sed nobis vel nam!
+                    </p>
+                    <p class="m-0 mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum quisquam corporis odio neque blanditiis ut fugiat, sunt debitis reprehenderit
+                        vitae impedit nulla assumenda sapiente nobis doloribus. Sed nobis vel nam!
+                    </p>
+                    <button class="readmore-link">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="#">Read More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End New Section -->
+    <!-- Start New Section -->
+    <section class="fundamentals text-bg-dark pt-5 pb-5">
+        <div class="container">
+            <div class="content d-flex align-items-center">
+                <div class="text  ">
+                    <h4 class="m-0 mb-3 fw-bold">Learn React</h4>
+                    <p class="m-0 mb-4 fs-6 lh-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum quisquam corporis odio neque blanditiis ut fugiat, sunt debitis reprehenderit
+                        vitae impedit nulla assumenda sapiente nobis doloribus. Sed nobis vel nam!
+                    </p>
+                    <p class="m-0 mb-4 fs-6 lh-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum quisquam corporis odio neque blanditiis ut fugiat, sunt debitis reprehenderit
+                        vitae impedit nulla assumenda sapiente nobis doloribus. Sed nobis vel nam!
+                    </p>
+                    <button class="readmore-link">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="#">Read More</a>
+                    </button>
+                </div>
+                <div class="image ms-5 d-none d-lg-block">
+                    <img class="img-fluid" src="images/react.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End New Section -->
+
+    <!-- Start New Section -->
+    <section class="p-5" id="questions">
+        <div class="container">
+
+            <h2 class="m-0 mb-3 text-center fw-bold">Frequently Asked Questions</h2>
+
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseOne" 
+                    aria-expanded="false" 
+                    aria-controls="flush-collapseOne">
+                        Question #1
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion,
+                        which is intended to demonstrate the <code>.accordion-flush</code> class.
+                        This is the third item's accordion body. Nothing more exciting happening
+                        here in terms of content, but just filling up the space to make it look,
+                        at least at first glance, a bit more representative of how this would look
+                        in a real-world application.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseTwo" 
+                    aria-expanded="false" 
+                    aria-controls="flush-collapseTwo">
+                        Question #2
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion,
+                        which is intended to demonstrate the <code>.accordion-flush</code> class.
+                        This is the third item's accordion body. Nothing more exciting happening
+                        here in terms of content, but just filling up the space to make it look,
+                        at least at first glance, a bit more representative of how this would look
+                        in a real-world application.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseThree" 
+                    aria-expanded="false" 
+                    aria-controls="flush-collapseThree">
+                        Question #3
+                    </button>
+                    </h2>
+                    <div 
+                    id="flush-collapseThree" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion,
+                        which is intended to demonstrate the <code>.accordion-flush</code> class.
+                        This is the third item's accordion body. Nothing more exciting happening
+                        here in terms of content, but just filling up the space to make it look,
+                        at least at first glance, a bit more representative of how this would look
+                        in a real-world application.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseFour" 
+                    aria-expanded="false" 
+                    aria-controls="flush-collapseFour">
+                        Question #4
+                    </button>
+                    </h2>
+                    <div 
+                    id="flush-collapseFour" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion,
+                        which is intended to demonstrate the <code>.accordion-flush</code> class.
+                        This is the third item's accordion body. Nothing more exciting happening
+                        here in terms of content, but just filling up the space to make it look,
+                        at least at first glance, a bit more representative of how this would look
+                        in a real-world application.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button 
+                    class="accordion-button collapsed" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseFive" 
+                    aria-expanded="false" 
+                    aria-controls="flush-collapseFive">
+                        Question #5
+                    </button>
+                    </h2>
+                    <div 
+                    id="flush-collapseFive" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion,
+                        which is intended to demonstrate the <code>.accordion-flush</code> class.
+                        This is the third item's accordion body. Nothing more exciting happening
+                        here in terms of content, but just filling up the space to make it look,
+                        at least at first glance, a bit more representative of how this would look
+                        in a real-world application.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End New Section -->
+
+    <!-- Start New Section -->
+    <section class="instructors py-5 text-bg-primary text-center" id="instructor">
+        <div class="container">
+            <h2 class="m-0 mb-2 text-center fw-bold">Our Instructors</h2>
+            <p class="m-0 fs-5 mb-4">Our Instructors all have 5+ Years Working as a web developer in the industry</p>
+            <div class="row row-gap-3">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="instructor text-bg-light p-3 rounded">
+                        <img class="mb-3 img-fluid rounded-circle" src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+                        <h3 class="m-0 mb-3">John Doe</h3>
+                        <p class="m-0 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam nihil exercitationem eveniet quas nisi pariatur officiis, impedit aliquam,
+                            iste provident voluptatum quisquam
+                        </p>
+                        <div class="socila d-flex justify-content-center align-items-center">
+                            <a href="#"> <i class="me-3 twiter fs-5 fa-brands fa-twitter"></i> </a>
+                            <a href="#"> <i class="me-3 facebook fs-5 fa-brands fa-facebook"></i> </a>
+                            <a href="#"> <i class="me-3 linked-in fs-5 fa-brands fa-linkedin"></i> </a>
+                            <a href="#"> <i class="fs-5 instgram fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="instructor text-bg-light p-3 rounded">
+                        <img class="mb-3 img-fluid rounded-circle" src="https://randomuser.me/api/portraits/women/8.jpg" alt="">
+                        <h3 class="m-0 mb-3">Jane Mike</h3>
+                        <p class="m-0 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam nihil exercitationem eveniet quas nisi pariatur officiis, impedit aliquam,
+                            iste provident voluptatum quisquam
+                        </p>
+                        <div class="socila d-flex justify-content-center align-items-center">
+                            <a href="#"> <i class="me-3 twiter fs-5 fa-brands fa-twitter"></i> </a>
+                            <a href="#"> <i class="me-3 facebook fs-5 fa-brands fa-facebook"></i> </a>
+                            <a href="#"> <i class="me-3 linked-in fs-5 fa-brands fa-linkedin"></i> </a>
+                            <a href="#"> <i class="fs-5 instgram fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="instructor text-bg-light p-3 rounded">
+                        <img class="mb-3 img-fluid rounded-circle" src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+                        <h3 class="m-0 mb-3">Steve Smith</h3>
+                        <p class="m-0 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam nihil exercitationem eveniet quas nisi pariatur officiis, impedit aliquam,
+                            iste provident voluptatum quisquam
+                        </p>
+                        <div class="socila d-flex justify-content-center align-items-center">
+                            <a href="#"> <i class="me-3 twiter fs-5 fa-brands fa-twitter"></i> </a>
+                            <a href="#"> <i class="me-3 facebook fs-5 fa-brands fa-facebook"></i> </a>
+                            <a href="#"> <i class="me-3 linked-in fs-5 fa-brands fa-linkedin"></i> </a>
+                            <a href="#"> <i class="fs-5 instgram fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="instructor text-bg-light p-3 rounded">
+                        <img class="mb-3 img-fluid rounded-circle" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                        <h3 class="m-0 mb-3">Will Payers</h3>
+                        <p class="m-0 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam nihil exercitationem eveniet quas nisi pariatur officiis, impedit aliquam,
+                            iste provident voluptatum quisquam
+                        </p>
+                        <div class="socila d-flex justify-content-center align-items-center">
+                            <a href="#"> <i class="me-3 twiter fs-5 fa-brands fa-twitter"></i> </a>
+                            <a href="#"> <i class="me-3 facebook fs-5 fa-brands fa-facebook"></i> </a>
+                            <a href="#"> <i class="me-3 linked-in fs-5 fa-brands fa-linkedin"></i> </a>
+                            <a href="#"> <i class="fs-5 instgram fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End New Section -->
+
+    <!--Start  Contact & Map -->
+    <div class="contact p-5">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-md-6">
+                    <h2 class="m-0 mb-3 fw-bold">Contact Info</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 
+                            50 Main st, Bostan MA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> 
+                            (555)555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> 
+                            (333)333-3333
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> 
+                            (555)enroll@email.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span> 
+                            (555)student@email.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Contact & Map -->
+
+    <!-- Start Footer -->
+    <footer class="p-4 text-bg-dark text-center ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <p class="lead m-0">Copyright &copy; 2021 Frontend Bootcamp</p>
+            <a href="#" class="d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-circle-arrow-up fs-1"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script src="main.js" defer></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

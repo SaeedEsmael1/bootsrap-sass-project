@@ -1,0 +1,58 @@
+@use'../helpers/varibels' as *;
+@use'../helpers/mixins' as *;
+
+.footer {
+    margin-top: 30px;
+    background-color: #cac6c6;
+    .contenet {
+        h3 {
+            font-size: 20px;
+        }
+        .info {
+            img {
+                width: 100px;
+                max-width: 100%;
+            }
+            .text {
+                position: relative;
+                top: 10px;
+                h4 {
+                    font-size: 18px;
+                    color: #654100;
+                    font-weight: bold;
+                }
+                p {
+                    color: $grayColor;
+                }
+            }
+        }
+        .about {
+            color: $grayColor;
+            .email {
+                a {
+                    color: #654100  !important; 
+                }
+
+            }
+        }
+        form {
+            .input:focus {
+                outline: none;
+            }
+            textarea  {
+                min-height: 100px;
+                resize: none;
+            }
+            .submit {
+                background-color: $mainColor;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .created {
+        padding: 20px;
+        margin-bottom: 0;
+        color: $grayColor;
+    }
+}
